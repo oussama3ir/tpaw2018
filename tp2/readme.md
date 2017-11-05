@@ -72,19 +72,17 @@ Le formulaire permettra de saisir les informations suivantes :
       * ` <input type="button" value="Valider" onclick="validation()"> `
     
     4. La fonction validation() valide que tous les champs sont remplis et contiennent **au moins 5 caractères**
-      1. pour faciliter la récupération des valeurs, ajouter un id à chaque champ de saisie
-        * exemple : ` <input type="text" name="nom" id="nom"> `
+	1. pour faciliter la récupération des valeurs, ajouter un id à chaque champ de saisie
+          * exemple : ` <input type="text" name="nom" id="nom"> `
         
-      2.  pour récupérer la valeur d’un champ (qui contient un id=”nom”)
-        * ` document.getElementById("nom").value ` ou ` document.querySelector("#nom").value `
+      	2.  pour récupérer la valeur d’un champ (qui contient un id=”nom”)
+          * ` document.getElementById("nom").value ` ou ` document.querySelector("#nom").value `
         
-      3. pour connaître la taille d’une chaine de caractère
-        * "ma chaine de caratère"**.length** ou ` document.getElementById("nom").value.length `
+      	3. pour connaître la taille d’une chaine de caractère
+          * "ma chaine de caratère"**.length** ou ` document.getElementById("nom").value.length `
 
-      4. Si il y un champ vide, afficher un message dans la DIV “error”.
-        * ` document.getElementById("error").innerHTML = "La saisie du nom est obligatoire"; `
+      	4. Si il y un champ vide, afficher un message dans la DIV “error”
+          * ` document.getElementById("error").innerHTML = "La saisie du nom est obligatoire"; `
         
-      5. Si tous les champs sont bien remplis : afficher un message dans la DIV “resultat”
-        * ` document.getElementById("resultat").innerHTML = "Bienvenue " + document.querySelector("#nom").value; `
-
-
+      	5. Si tous les champs sont bien remplis : afficher un message dans la DIV “resultat”
+	  * ` document.getElementById("resultat").innerHTML = "Bienvenue " + document.querySelector("#nom").value; `
