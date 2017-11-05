@@ -1,7 +1,7 @@
 TP2
 ![Logo galille](https://github.com/bilelz/tpaw2018/blob/master/galilee.png?raw=true)
 
-Master 3IR | [https://3ir2018.slack.com](3ir2018.slack.com)
+Master 3IR | [3ir2018.slack.com](https://3ir2018.slack.com)
 TP AW #2 : HTML & Javascript
 
 Validation de formulaire en JavaScript.
@@ -16,10 +16,10 @@ TP AW #2 : HTML & Javascript
 Table des matières
 =================
 
-  * [#plate-forme-de-développement-](Plate-forme de développement)
-  * [#formulaire-html](Formulaire HTML)
-  * [#espace-d-information-pour-la-validation-du-formulaire](Espace d’information pour la validation du formulaire)
-  * [#validation-javascript](Validation Javascript)
+  * [Plate-forme de développement](#plate-forme-de-développement-)
+  * [Formulaire HTML](#formulaire-html)
+  * [Espace d’information pour la validation du formulaire](#espace-dinformation-pour-la-validation-du-formulaire)
+  * [Validation Javascript](#validation-javascript)
 
 Support technique : http://www.w3schools.com/js/default.asp
 
