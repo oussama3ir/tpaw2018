@@ -1,7 +1,7 @@
 TP2
+![Logo galille](https://github.com/bilelz/tpaw2018/blob/master/galilee.png?raw=true)
 
-
-Master 3IR | 3ir2018.slack.com
+Master 3IR | [https://3ir2018.slack.com](3ir2018.slack.com)
 TP AW #2 : HTML & Javascript
 
 Validation de formulaire en JavaScript.
@@ -16,17 +16,17 @@ TP AW #2 : HTML & Javascript
 Support technique : http://www.w3schools.com/js/default.asp
 
 Le formulaire permettra de saisir les informations suivantes :
-* Nom
-* Prénom 
-* Date de naissance
-* Adresse postale
-* Adresse mail
+* Nom (type: text, minimum: 5 caractères, max: 20 car.)
+* Prénom (type: text, minimum: 5 caractères, max: 20 car.)
+* Date de naissance (type: date)
+* Adresse postale (type: text, minimum: 5 caractères, max: 50 car.)
+* Adresse mail (type: email, minimum: 5 caractères, max: 30 car.)
 
-1. Plate-forme de développement : 
+1. # Plate-forme de développement : 
 * [Visual Studio Code](https://code.visualstudio.com), Eclipse ou un Éditeur de texte (notepad++, emacs, …)
 * Navigateur web (Google Chrome ou Mozilla Firefox)
 
-2. Formulaire HTML
+2. # Formulaire HTML
     1. Dans le votre dossier “TP2”, créer un fichier index.html
     2. Écrire le code HTML pour reproduire le formulaire suivant
         1. ![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw2018/master/tp2/TP2table.jpg "texte pour le titre, facultatif")
@@ -37,10 +37,46 @@ Le formulaire permettra de saisir les informations suivantes :
         ` <input type="button" value="Valider"/> `
 
 3. Espace d’information pour la validation du formulaire
-    1. Sous votre formulaire, écrire un endroit pour afficher les messages d’erreur
+    1. Sous votre formulaire, écrire un endroit pour afficher les **messages d’erreur**
     ` <div id="error"> </div> `
         1. cette DIV doit avoir cette mise en forme via du CSS
             * couleur de fond : rose
             * padding : 5px
             * bordure : 1px de couleur noire
-            * ![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw2018/master/tp2/TP2table2.jpg "texte pour le titre, facultatif")      
+            * ![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw2018/master/tp2/TP2table2.jpg "texte pour le titre, facultatif")   
+            
+     2. et un endroit pour écrire un **message de validation**
+     ` <div id="resultat"> </div> `
+        1. cette DIV doit avoir cette mise en forme via du CSS         
+            * couleur de fond : vert
+            * padding : 5px
+            * couleur de texte : blanc
+            * ![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw2018/master/tp2/TP2table3.jpg "texte pour le titre, facultatif")   
+            
+4. Validation Javascript
+    1. Créer un fichier formulaire.js
+    
+    2. Y faire référence dans votre code HTML (entre les balises HEAD)
+    ` <script type="text/javascript" src="formulaire.js"></script> `
+    
+    3. Dans le fichier javaScript, écrire une fonction validation() qui s'exécute quand on click sur le bouton valider 
+	[http://www.w3schools.com/js/js_functions.asp](http://www.w3schools.com/js/js_functions.asp)
+      * ` <input type="button" value="Valider" onclick="validation()"> `
+    
+    4. La fonction validation() valide que tous les champs sont remplis et contiennent **au moins 5 caractères**
+      1. pour faciliter la récupération des valeurs, ajouter un id à chaque champ de saisie
+        * exemple : ` <input type="text" name="nom" id="nom"> `
+        
+      2.  pour récupérer la valeur d’un champ (qui contient un id=”nom”)
+        * ` document.getElementById("nom").value ` ou ` document.querySelector("#nom").value `
+        
+      3. pour connaître la taille d’une chaine de caractère
+        * "ma chaine de caratère"**.length** ou ` document.getElementById("nom").value.length `
+
+      4. Si il y un champ vide, afficher un message dans la DIV “error”.
+        * ` document.getElementById("error").innerHTML = "La saisie du nom est obligatoire"; `
+        
+      5. Si tous les champs sont bien remplis : afficher un message dans la DIV “resultat”
+        * ` document.getElementById("resultat").innerHTML = "Bienvenue " + document.querySelector("#nom").value; `
+
+
