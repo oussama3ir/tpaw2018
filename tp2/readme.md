@@ -13,6 +13,14 @@ TP AW #2 : HTML & Javascript
 
 # Validation de formulaire en JavaScript.
 
+Table des matières
+=================
+
+  * [#plate-forme-de-développement-](Plate-forme de développement)
+  * [#formulaire-html](Formulaire HTML)
+  * [#espace-d-information-pour-la-validation-du-formulaire](Espace d’information pour la validation du formulaire)
+  * [#validation-javascript](Validation Javascript)
+
 Support technique : http://www.w3schools.com/js/default.asp
 
 Le formulaire permettra de saisir les informations suivantes :
@@ -22,11 +30,11 @@ Le formulaire permettra de saisir les informations suivantes :
 * Adresse postale (type: text, minimum: 5 caractères, max: 50 car.)
 * Adresse mail (type: email, minimum: 5 caractères, max: 30 car.)
 
-1. # Plate-forme de développement : 
+1. ## Plate-forme de développement : 
 * [Visual Studio Code](https://code.visualstudio.com), Eclipse ou un Éditeur de texte (notepad++, emacs, …)
 * Navigateur web (Google Chrome ou Mozilla Firefox)
 
-2. # Formulaire HTML
+2. ## Formulaire HTML
     1. Dans le votre dossier “TP2”, créer un fichier index.html
     2. Écrire le code HTML pour reproduire le formulaire suivant
         1. ![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw2018/master/tp2/TP2table.jpg "texte pour le titre, facultatif")
@@ -36,7 +44,7 @@ Le formulaire permettra de saisir les informations suivantes :
         5. Code HTML pour le bouton de validation 
         ` <input type="button" value="Valider"/> `
 
-3. Espace d’information pour la validation du formulaire
+3. ## Espace d’information pour la validation du formulaire
     1. Sous votre formulaire, écrire un endroit pour afficher les **messages d’erreur**
     ` <div id="error"> </div> `
         1. cette DIV doit avoir cette mise en forme via du CSS
@@ -53,7 +61,7 @@ Le formulaire permettra de saisir les informations suivantes :
             * couleur de texte : blanc
             * ![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw2018/master/tp2/TP2table3.jpg "texte pour le titre, facultatif")   
             
-4. Validation Javascript
+4. ## Validation Javascript
     1. Créer un fichier formulaire.js
     
     2. Y faire référence dans votre code HTML (entre les balises HEAD)
